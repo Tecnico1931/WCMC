@@ -63,7 +63,7 @@ ECHO.
 :OS
 ECHO Detecting OS processor type
 
-if "%PROCESSOR_ARCHITECTURE%"=="AMD64" goto 64BIT
+if %PROCESSOR_ARCHITECTURE% == AMD64 goto 64BIT
 ECHO 32-bit OS installing Bit Locker Manager Please Wait...
 EMAgent_32bit_setup.exe /s /v"CM_EDITION=1 SERVERHOST=ddpe.med.cornell.edu SERVERPORT=8888 SECURITYSERVERHOST=ddpe.med.cornell.edu SECURITYSERVERPORT=8443 ARPSYSTEMCOMPONENT=1 ADDLOCAL=DELL_Security_Tools,BITLOCKER FEATURE=BLM /l*v C:\Windows\Temp\Bitlockerinstall.log /qn"
 ECHO.
