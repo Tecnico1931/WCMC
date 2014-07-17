@@ -13,7 +13,8 @@ sudo -u $3 /usr/local/bin/dockutil --add '/Applications/PCClient.app' --no-resta
 sudo -u $3 /usr/local/bin/dockutil --add '/Applications/Microsoft Office 2008/Microsoft Excel.app' --no-restart "/Users/$3"
 sudo -u $3 /usr/local/bin/dockutil --add '/Applications/Microsoft Office 2008/Microsoft PowerPoint.app' --no-restart "/Users/$3"
 sudo -u $3 /usr/local/bin/dockutil --add '/Applications/Microsoft Office 2008/Microsoft Word.app' --no-restart "/Users/$3"
-sudo -u $3 /usr/local/bin/dockutil -'~/Documents' --view fan --display folder "/Users/$3"
+#sudo -u $3 /usr/local/bin/dockutil -'~/Documents' --view fan --display folder "/Users/$3"
+sudo -u $3 /usr/local/bin/dockutil -'/WCMC Resource/' --view fan --display folder "/Users/$3"
 
 # Relaunch Dock
 /usr/bin/sudo killall Dock
