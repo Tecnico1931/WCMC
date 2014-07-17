@@ -19,4 +19,6 @@ sudo -u $3 /usr/local/bin/dockutil -'/WCMC Resource/' --view fan --display folde
 # Relaunch Dock
 /usr/bin/sudo killall Dock
 
+osascript tell application "PCClient" to activate
+
 exit 0
